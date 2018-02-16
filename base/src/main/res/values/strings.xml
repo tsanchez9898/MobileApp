@@ -1,0 +1,7 @@
+<resources>
+    <string name="points_counter">Points:</string>
+    <string name="points_counter_2">Points: 0</string>
+    <string name="lose_game">You Lose</string>
+    <string name="btn_restart">RESTART</string>
+    <string name="win_game">You Won!</string>
+</resources>
