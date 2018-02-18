@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         //Give 15 click max
         //Display winning screen if count is 10
         if(count == 10){
-            count = 0;
-            Toast.makeText(this, "You won!", Toast.LENGTH_SHORT).show();
-            Intent intent =  new Intent (this, WinActivity.class);
+            Intent intent = new Intent(this, WinActivity.class);
+            finish();
             startActivity(intent);
         }
         if (tries == 15){
             Intent intent =  new Intent (this, LoseActivity.class);
+            finish();
             startActivity(intent);
         }
         else {
@@ -74,8 +74,9 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Points: " + count);
 
             //call mehtod
-            giveNewNumber();
             tries++;
+            giveNewNumber();
+
 
     }
     //Handler for the right button
@@ -97,6 +98,5 @@ public class MainActivity extends AppCompatActivity {
             giveNewNumber();
             tries++;
     }
-
 }
 
